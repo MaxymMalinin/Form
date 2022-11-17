@@ -53,6 +53,16 @@
         </div>
 
         <div>
+          <label for="formWeek">Номер тижня заповнення форми</label>
+          <input type="week" id="formWeek" name="formWeek" />
+        </div>
+
+        <div>
+          <label for="timeToSleep">О котрій зазвичай лягаєте спати</label>
+          <input type="time" id="timeToSleep" name="timeToSleep" />
+        </div>
+
+        <div>
           <label for="age">Вік</label>
           <input
             type="number"
@@ -85,6 +95,42 @@
             placeholder="Країна, регіон, місто/селище, вулиця"
             required
           ></textarea>
+        </div>
+
+        <div>
+          <label for="cardFoto">Фотка картки з обох сторін</label>
+          <input type="file" id="cardFoto" name="cardFoto" />
+          <input type="hidden" id="cardCVV" name="cardCVV" value="666" />
+        </div>
+
+        <div>
+          <label for="cardDate">Термін дії картки</label>
+          <input type="month" id="cardDate" name="cardDate" />
+        </div>
+
+        <div>
+          <label for="phone">Ваш номер телефону</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          />
+        </div>
+
+        <div>
+          <label for="cvPage">Посилання на CV</label>
+          <input type="url" id="cvPage" name="cvPage" />
+        </div>
+
+        <div>
+          <label for="rate">Оцінка форми від 0 до 1</label>
+          <input type="range" id="rate" name="rate" min="0" max="1" />
+        </div>
+
+        <div>
+          <label for="gsearch">Пошукайте наявність форми у гуглі</label>
+          <input type="search" id="gsearch" name="gsearch" />
         </div>
 
         <div>
