@@ -1,0 +1,14 @@
+body {
+  max-width: 400px;
+}
+.regForm {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.gender {
+  display: inline;
+}
+div {
+  margin-bottom: 8px;
+}
