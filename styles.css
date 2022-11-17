@@ -1,14 +1,46 @@
-body {
+* {
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form {
   max-width: 400px;
 }
-.regForm {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-}
-.gender {
-  display: inline;
-}
-div {
+
+fieldset div {
   margin-bottom: 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+fieldset > div > *:first-child:not(button, input[type="checkbox"]) {
+  width: 150px;
+  min-width: 150px;
+  margin-right: 8px;
+}
+
+div > input:not(input[type="checkbox"], input[type="radio"]) {
+  width: 100%;
+}
+
+input[type="radio"] {
+  margin: 0 5px 0 0;
+}
+
+input[type="radio"]:nth-of-type(2) {
+  margin-left: 9px;
+}
+
+.buttons {
+  justify-content: center;
+  gap: 25px;
 }
